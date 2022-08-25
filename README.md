@@ -70,8 +70,8 @@ Método: POST
 
 ```json
 {
-	"ds_url": "https://google.com.br/",
-	"id_prefixo": 2
+  "ds_url": "https://google.com.br/",
+  "id_prefixo": 2
 }
 ```
 
@@ -89,11 +89,11 @@ Retorno esperado
 
 ```json
 {
-	"id_url": 1,
-	"ds_url": "https://google.com.br/",
-	"ds_url_encurtada": "rdg.zpm289c",
-	"id_prefixo": 2,
-	"criado_em": "2022-08-25T12:14:49.431Z"
+  "id_url": 1,
+  "ds_url": "https://google.com.br/",
+  "ds_url_encurtada": "rdg.zpm289c",
+  "id_prefixo": 2,
+  "criado_em": "2022-08-25T12:14:49.431Z"
 }
 ```
 
@@ -116,32 +116,32 @@ Retorno esperado
 
 ```json
 [
-	{
-		"ds_url": "https://google.com.br/",
-		"ds_url_encurtada": "rdg.zpm289c",
-		"criado_em": "2022-08-25T12:14:49.431Z",
-		"prefixo": {
-			"id_prefixo": 2,
-			"ds_prefixo": "rdg.",
-			"criado_em": "2022-08-25T12:10:40.016Z"
-		}
-	},
-	{
-		"ds_url": "https://globo.com.br/",
-		"ds_url_encurtada": "pfx-9kqpzsp",
-		"criado_em": "2022-08-25T12:16:23.258Z",
-		"prefixo": {
-			"id_prefixo": 1,
-			"ds_prefixo": "pfx-",
-			"criado_em": "2022-08-25T12:10:40.016Z"
-		}
-	},
-	{
-		"ds_url": "https://github.com/",
-		"ds_url_encurtada": "96fym24",
-		"criado_em": "2022-08-25T12:16:34.951Z",
-		"prefixo": null
-	}
+  {
+    "ds_url": "https://google.com.br/",
+    "ds_url_encurtada": "rdg.zpm289c",
+    "criado_em": "2022-08-25T12:14:49.431Z",
+    "prefixo": {
+      "id_prefixo": 2,
+      "ds_prefixo": "rdg.",
+      "criado_em": "2022-08-25T12:10:40.016Z"
+    }
+  },
+  {
+    "ds_url": "https://globo.com.br/",
+    "ds_url_encurtada": "pfx-9kqpzsp",
+    "criado_em": "2022-08-25T12:16:23.258Z",
+    "prefixo": {
+      "id_prefixo": 1,
+      "ds_prefixo": "pfx-",
+      "criado_em": "2022-08-25T12:10:40.016Z"
+    }
+  },
+  {
+    "ds_url": "https://github.com/",
+    "ds_url_encurtada": "96fym24",
+    "criado_em": "2022-08-25T12:16:34.951Z",
+    "prefixo": null
+  }
 ]
 ```
 
@@ -170,12 +170,12 @@ Usuário deve ser direcionado para o link original, se o mesmo existir
 
 ```json
 [
-	{
-		"ds_url": "https://github.com/",
-		"ds_url_encurtada": "96fym24",
-		"criado_em": "2022-08-25T12:16:34.951Z",
-		"prefixo": null
-	}
+  {
+    "ds_url": "https://github.com/",
+    "ds_url_encurtada": "96fym24",
+    "criado_em": "2022-08-25T12:16:34.951Z",
+    "prefixo": null
+  }
 ]
 ```
 
