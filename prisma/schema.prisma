@@ -1,0 +1,31 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Prefixo {
+  id_prefixo Int      @id(map: "pk_prefixo") @default(autoincrement())
+  ds_prefixo String?  @unique(map: "ui_prefixo_001")
+  criado_em  DateTime @default(now())
+  urls       Url[]
+
+  @@map("prefixo")
+}
+
+model Url {
+  id_url           Int      @id(map: "pk_url") @default(autoincrement())
+  ds_url           String   @unique(map: "ui_url_001")
+  ds_url_encurtada String   @unique(map: "ui_url_002") @db.VarChar(25)
+  id_prefixo       Int?
+  criado_em        DateTime @default(now())
+  prefixo          Prefixo? @relation(fields: [id_prefixo], references: [id_prefixo])
+
+  @@map("url")
+}
